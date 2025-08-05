@@ -1,6 +1,9 @@
 # --- Add User-Specific Library Path ---
 # This script is the added to allow user-specific R libraries to be loaded on Glasgow Shiny server.
 
+print(paste("This script is being run by user:", system('whoami', intern = TRUE)))
+print(paste("R version being used:", R.version.string))
+
 # Define the path to the user's personal library.
 user_lib_path <- "/home/jeff/R/x86_64-redhat-linux-gnu-library/4.5"
 
